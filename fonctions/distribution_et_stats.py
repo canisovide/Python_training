@@ -1,7 +1,9 @@
 import random
 
 
-def cal_stat(liste=[1.0, 8.0, 0.0, 6.0, 7.0, 3.0]):
+def cal_stat(liste=None):
+    if liste is None:
+        liste = [1.0, 8.0, 0.0, 6.0, 7.0, 3.0]
     a = min(liste)
     b = max(liste)
     c = sum(liste)/len(liste)
